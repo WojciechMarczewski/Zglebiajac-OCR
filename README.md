@@ -43,16 +43,17 @@ Technologia OCR na przestrzeni lat znacząco się zmieniała – początkowo pol
 
 Dzisiejsze rozwiązania OCR posiadają wiele wbudowanych modułów wspomagających proces rozpoznawania znaków, jak na przykład techniki preprocessingu, przetwarzające graficznie obrazy z tekstem na bardziej użyteczne do przetworzenia przez OCR. Dalsze dobudowania sprawiły, że proces optycznego rozpoznawania znaków ma charakter sekwencyjny, w którym kolejne moduły odpowiadają za specyficzne zadanie w procesie obróbki danych. Uproszczony przykładowy model procesu OCR dla współczesnych rozwiązań przedstawia Rys. 1.
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/e850faf7-45ca-4f3a-a5e6-4b9de3a06949" alt="Uproszczony_model_procesu_ocr">
+</div>
+<sub><i>Rysunek 1 Uproszczony model procesu OCR. Źródło: Opracowanie własne, na podstawie: Jang, Seung Ju. "Ocr related technology trends." European Journal of Engineering and Technology Vol 8.1 (2020)</i></sub>
+
+
 Obróbka wstępna (ang. _Preprocessing_) polega na przygotowaniu surowego obrazu do analizy przez poprawę jego jakości. Najczęściej polega na usunięciu lub zminimalizowaniu różnych rodzajów zniekształceń i szumów z obrazów zawierających tekst, co wspiera ekstrakcję istotnych cech i zmniejsza obciążenie obliczeniowe kolejnych etapów przetwarzania \[10\] \[11\].
 
 Często stosowaną metodą poprawy jakości obrazu jest redukcja kolorów z przestrzeni RGB do skali szarości, a następnie binaryzacja przetworzonego obrazu. Proces ten polega na przypisaniu pikselowi wartości 0 (czarny) lub 1 (biały) na podstawie ustalonego progu jasności, który określa, czy poziom nasycenia piksela przekracza zadaną wartość. Dzięki temu kontrast między jasnymi a ciemnymi obszarami zostaje wzmocniony, co ułatwia przetwarzanie tekstu przez silniki OCR \[1\].
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/e850faf7-45ca-4f3a-a5e6-4b9de3a06949" alt="Uproszczony_model_procesu_ocr">
-</div>
 
-
-<sub><i>Rysunek 1 Uproszczony model procesu OCR. Źródło: Opracowanie własne, na podstawie: Jang, Seung Ju. "Ocr related technology trends." European Journal of Engineering and Technology Vol 8.1 (2020)</i></sub>
 
 Obrazy poddawane przetwarzaniu OCR często cechują się niską jakością i licznymi zniekształceniami. Redukcja szumów ma na celu zmniejszenie wpływu niedoskonałości, a przez lata opracowano wiele metod radzenia sobie z tym problemem.
 
@@ -108,7 +109,7 @@ Tradycyjne metody uczenia maszynowego w przetwarzaniu języka naturalnego były 
 
 Metody oparte na sieciach neuronowych różnią się od tradycyjnych metod, ponieważ nie wymagają ręcznej inżynierii cech, co sprawia, że proces treningu jest bardziej efektywny. Aktualnie sieci neuronowe są najczęściej stosowaną techniką przetwarzania języka naturalnego w OCR. Sieci neuronowe potrafią uczyć się z surowych danych dzięki zdolności do obsługi złożonych struktur językowych, przez co są bardziej odpowiednie do zadań wymagających głębszego zrozumienia tekstu, takich jak analiza sentymentu czy tłumaczenie języków. Modele oparte na głębokich sieciach neuronowych w NLP obejmują sieci rekurencyjne (RNN), splotowe sieci neuronowe (CNN), sieci długiej i krótkiej pamięci (LSTM) oraz modele oparte na transformatorach, takie jak BERT i GPT \[20\].
 
-Podsumowując, dziedzina NLP rozwijała się od podejść opartych na regułach po zaawansowane modele oparte na głębokim uczeniu, takie jak BERT czy GPT, a nowoczesne modele pozwalają na znacznie dokładniejsze przetwarzanie tekstu, co ma kluczowe znaczenie dla skuteczności technologii OCR. Przedstawione w niniejszym rozdziale etapy opisują kompozycję wielu technik używanych obecnie i w przeszłości do przeprowadzania procesu OCR. Rozbudowa procesu OCR o różnorodne techniki zawsze miała na celu zwiększenie skuteczności optycznego rozpoznawania znaków, co doprowadziło do stopniowego wzrostu skomplikowania tego procesu. Różnorodność technik wykorzystywanych w rozpoznawaniu znaków sprawia, że rozwiązania OCR mogą znacząco różnić się pod względem konstrukcji i zastosowań, a jednocześnie umożliwiają odnajdywanie nisz, w których są szczególnie skuteczne. Przykładem takiej niszy jest ekstrakcja danych z gazetek reklamowych.
+Podsumowując, dziedzina NLP rozwijała się od podejść opartych na regułach po zaawansowane modele oparte na głębokim uczeniu, takie jak BERT czy GPT, a nowoczesne modele pozwalają na znacznie dokładniejsze przetwarzanie tekstu, co ma kluczowe znaczenie dla skuteczności technologii OCR. Przedstawione w niniejszym rozdziale etapy opisują kompozycję wielu technik używanych obecnie i w przeszłości do przeprowadzania procesu OCR. Rozbudowa procesu OCR o różnorodne techniki zawsze miała na celu zwiększenie skuteczności optycznego rozpoznawania znaków, co doprowadziło do stopniowego wzrostu skomplikowania tego procesu. Różnorodność technik wykorzystywanych w rozpoznawaniu znaków sprawia, że rozwiązania OCR mogą znacząco różnić się pod względem konstrukcji i zastosowań, a jednocześnie umożliwiają odnajdywanie nisz, w których są szczególnie skuteczne.
 
 # Bibliografia
 
